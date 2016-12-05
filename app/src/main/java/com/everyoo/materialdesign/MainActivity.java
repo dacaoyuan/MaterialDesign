@@ -40,10 +40,6 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.inject(this);
         textView.setText("MaterialDesignStyle");
 
-        new  Tips().tips();
-
-
-
         /**
          *   常用方法
          */
@@ -124,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
         log.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, FloatingActionButton.class));
+                startActivity(new Intent(MainActivity.this, ToolbarActivity.class));
             }
         });
 

@@ -18,6 +18,17 @@
         <item name="colorPrimaryDark">#512DA8</item>
         <item name="colorAccent">#FF4081</item>
         <item name="android:windowBackground">@color/window_background</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="TabTheme" parent="ThemeOverlay.AppCompat.Dark">
+
+        <!-- <item name="colorBackground">@drawable/btn</item>-->
+
+
     </style>
 
 
