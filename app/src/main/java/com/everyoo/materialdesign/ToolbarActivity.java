@@ -18,7 +18,7 @@ public class ToolbarActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("这里是Title");
         toolbar.setSubtitle("这里是子标题");
-        toolbar.setLogo(R.mipmap.push);
+        toolbar.setLogo(R.mipmap.bg_personal_center_number);
         setSupportActionBar(toolbar);
 
 

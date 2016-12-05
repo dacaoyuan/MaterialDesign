@@ -28,10 +28,11 @@ public class NavigationViewActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         final ActionBar ab = getSupportActionBar();
-        ab.setHomeAsUpIndicator(R.mipmap.ic_launcher);
+        ab.setHomeAsUpIndicator(R.mipmap.bg_personal_center_number);
         ab.setDisplayHomeAsUpEnabled(true);
 
         setupDrawerContent(mNavigationView);
+
 
 
     }
@@ -42,7 +43,7 @@ public class NavigationViewActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 item.setChecked(true);
-                mDrawerLayout.closeDrawers();
+                mDrawerLayout.closeDrawers();//关闭所有当前打开抽屉视图
                 return true;
             }
         });

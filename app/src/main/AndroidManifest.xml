@@ -15,15 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FloatingActionButton" />
+        <activity android:name=".FloatingActionButtonActivity" />
         <activity
             android:name=".NavigationViewActivity"
-            android:theme="@style/Theme.DesignDemo"
-
-            ></activity>
-        <activity android:name=".SecondActivity" />
+            android:theme="@style/Theme.DesignDemo" />
         <activity android:name=".ToolbarActivity" />
-        <activity android:name=".TabLayoutActivity"></activity>
+        <activity android:name=".TabLayoutActivity" />
     </application>
 
 </manifest>

@@ -11,7 +11,7 @@ import android.widget.Toast;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-public class FloatingActionButton extends AppCompatActivity {
+public class FloatingActionButtonActivity extends AppCompatActivity {
 
     @InjectView(R.id.floatingActionButton)
     android.support.design.widget.FloatingActionButton fActionButton;
@@ -36,7 +36,7 @@ public class FloatingActionButton extends AppCompatActivity {
                         .setAction("delete", new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                Toast.makeText(FloatingActionButton.this, "delete", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(FloatingActionButtonActivity.this, "delete", Toast.LENGTH_SHORT).show();
                             }
                         })
                         .show();
@@ -46,8 +46,8 @@ public class FloatingActionButton extends AppCompatActivity {
                 snackbar.setAction("跳转", new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Toast.makeText(FloatingActionButton.this, "跳转", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(FloatingActionButton.this, NavigationViewActivity.class));
+                        Toast.makeText(FloatingActionButtonActivity.this, "跳转", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(FloatingActionButtonActivity.this, NavigationViewActivity.class));
                     }
                 });
                 //snackbar.dismiss();
