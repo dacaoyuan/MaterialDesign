@@ -21,6 +21,7 @@
             android:theme="@style/Theme.DesignDemo" />
         <activity android:name=".ToolbarActivity" />
         <activity android:name=".TabLayoutActivity" />
+        <activity android:name=".AnimationActivity"></activity>
     </application>
 
 </manifest>

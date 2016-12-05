@@ -59,11 +59,13 @@
     <Button
         android:id="@+id/log"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="57dp"
-        android:text="登录" />
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:text="登录"
+        tools:targetApi="lollipop" />
 
 
 </RelativeLayout>

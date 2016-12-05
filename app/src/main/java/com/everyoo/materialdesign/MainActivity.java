@@ -90,7 +90,6 @@ public class MainActivity extends AppCompatActivity {
         //textInputLayoutPassword.setPasswordVisibilityToggleContentDescription();//该功能是为Talkback或其他无障碍功能提供的。
 
 
-
         EditText editTextPass = textInputLayoutPassword.getEditText();//得到EditText的控件实例。
 
 
@@ -121,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
         log.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, ToolbarActivity.class));
+                startActivity(new Intent(MainActivity.this, NavigationViewActivity.class));
             }
         });
 
