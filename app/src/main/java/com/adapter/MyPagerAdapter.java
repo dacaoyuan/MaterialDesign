@@ -15,6 +15,7 @@ public class MyPagerAdapter extends PagerAdapter {
 
     ArrayList<TextView> textViews;
 
+
     public MyPagerAdapter(ArrayList<TextView> textViews) {
         this.textViews = textViews;
     }
