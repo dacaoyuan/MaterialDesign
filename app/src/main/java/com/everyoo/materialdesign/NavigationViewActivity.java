@@ -72,6 +72,12 @@ public class NavigationViewActivity extends AppCompatActivity {
                     //item.setIcon(R.mipmap.bg_personal_center_number);
                 }
 
+                if (!TextUtils.isEmpty(item.getTitle()) && item.getTitle().equals("BottomNavigationView")) {
+                    startActivity(new Intent(NavigationViewActivity.this, BottomNavigationViewActivity.class));
+                    item.setChecked(true);
+                    //item.setIcon(R.mipmap.bg_personal_center_number);
+                }
+
                 if (!TextUtils.isEmpty(item.getTitle()) && item.getTitle().equals("Animation")) {
                     startActivity(new Intent(NavigationViewActivity.this, AnimationActivity.class));
                     item.setChecked(true);
