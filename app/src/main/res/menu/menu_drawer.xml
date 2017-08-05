@@ -7,11 +7,11 @@
             android:icon="@android:drawable/btn_star_big_on"
             android:title="ToolBar" />
         <item
-            android:id="@+id/nav_messages"
+            android:id="@+id/nav_tabLayout"
             android:icon="@android:drawable/btn_star_big_on"
             android:title="TabLayout" />
         <item
-            android:id="@+id/nav_friends"
+            android:id="@+id/nav_floatingActionButton"
             android:icon="@android:drawable/btn_star_big_on"
             android:title="FloatingActionButton" />
         <item
@@ -19,7 +19,7 @@
             android:icon="@android:drawable/btn_star_big_on"
             android:title="BottomNavigationView" />
         <item
-            android:id="@+id/nav_discussion"
+            android:id="@+id/nav_animation"
             android:icon="@android:drawable/btn_star_big_on"
             android:title="Animation" />
     </group>
@@ -27,9 +27,11 @@
     <item android:title="Sub items">
         <menu>
             <item
+                android:id="@+id/sub01"
                 android:icon="@android:drawable/btn_star_big_on"
                 android:title="Sub item 1" />
             <item
+                android:id="@+id/sub02"
                 android:icon="@android:drawable/btn_star_big_on"
                 android:title="Sub item 2" />
         </menu>
