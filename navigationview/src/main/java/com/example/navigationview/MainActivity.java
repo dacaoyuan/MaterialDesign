@@ -7,6 +7,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.ViewDragHelper;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -55,8 +57,15 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+        //NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        //navigationView.setNavigationItemSelectedListener(this);
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.replace(R.id.frame, new TestFragment());
+        transaction.commit();
+
+
     }
 
     @Override
@@ -119,6 +128,7 @@ public class MainActivity extends AppCompatActivity
 
     /**
      * 利用反射
+     *
      * @param activity
      * @param drawerLayout
      * @param displayWidthPercentage
